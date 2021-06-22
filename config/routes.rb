@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       post "/login", to: "users#login"
       post "/users", to: "users#create"
       get "/auto_login", to: "users#auto_login"
+      patch "/orders/:id/transform", to: "orders#transform"
     end
   end
       

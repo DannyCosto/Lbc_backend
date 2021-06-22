@@ -1,5 +1,6 @@
 class Api::V1::OrdersController < ApplicationController
   before_action :set_order, only: [:show, :update, :destroy]
+  before_action :authorized
 
   def transform
     current_cart = @user.orders.find(params[:id])
