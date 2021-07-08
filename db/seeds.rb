@@ -63,6 +63,7 @@ end
     ItemOrder.create(order: current_order, item: Item.all.sample)
 end
 
-
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 puts "done seeding"
+

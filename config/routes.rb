@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   namespace :api do
     namespace :v1 do
       resources :item_orders
@@ -9,6 +12,7 @@ Rails.application.routes.draw do
         end
 
       end
+
 
       resources :items
       resources :users
