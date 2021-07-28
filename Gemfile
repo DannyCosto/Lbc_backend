@@ -47,3 +47,17 @@ gem 'active_model_serializers', '~> 0.10.0'
 # active admin w/ devise
 gem 'activeadmin'
 gem 'devise'
+
+gem 'pay', '~> 2.0'
+
+# To use Stripe, also include:
+gem 'stripe', '< 6.0', '>= 2.8'
+
+# To use Braintree + PayPal, also include:
+gem 'braintree', '< 3.0', '>= 2.92.0'
+
+# To use Paddle, also include:
+gem 'paddle_pay', '~> 0.1'
+
+# To use Receipts
+gem 'receipts', '~> 1.0.0'

@@ -25,5 +25,7 @@ module Store
     config.middleware.use ActionDispatch::Flash
     config.middleware.use Rack::MethodOverride
     config.middleware.use ActionDispatch::Cookies
+    config.action_mailer.default_url_options = { host: "example.com" }
   end
 end
+
